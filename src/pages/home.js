@@ -8,7 +8,7 @@ export default function Home(props){
         console.log('aaaaaa')
         document.title = `You clicked ${count} times`;
         return ()=>{
-            console.log('bbbbb')
+            console.log(count)
         }
     },[count]); //, [count]//第二参数可以传入props的值来更新界面；
     return (

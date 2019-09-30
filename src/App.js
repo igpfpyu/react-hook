@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 /**
  * useLayoutEffect
  * 其函数签名与 useEffect 相同，但它会在所有的 DOM 变更之后同步调用 effect。
@@ -17,27 +17,9 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import Home from './pages/home';
 function App() {
-    const [count, setCount] = useState(0);
-    const [sum, setSum] = useState({name: 11});
-    useEffect(() => {
-        document.title = `You clicked ${count} times`;
-        return ()=>{
-            console.log('aaaaa')
-        }
-    },[count]); //, [count]
     return (
-        <div className="App">
-            <p>{sum.name}</p>
-            <Home friend={true} />
-            <Home friend={false} />
-            <p>You clicked {count} times</p>
-            <button onClick={() => setCount(count + 1)}>
-                Click me
-            </button>
-            <button onClick={() => setSum({name: ++sum.name})}>
-                Click me
-            </button>
-        </div>
+        <Home friend={true} />
+
     );
 }
 

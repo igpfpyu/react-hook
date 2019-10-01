@@ -16,9 +16,13 @@ import React from 'react';
  */
 import './App.css';
 import Home from './pages/home';
+import Counter from './pages/Counter';
 function App() {
     return (
-        <Home friend={true} />
+        <div>
+            <Home friend={true} />
+            <Counter />
+        </div>
 
     );
 }

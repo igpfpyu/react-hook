@@ -6,5 +6,4 @@ export default function useFriendStatus(friendID){
     //     setIsOnline(friendID)
     // }, [isOnline, friendID]);
     return isOnline;
-
 }

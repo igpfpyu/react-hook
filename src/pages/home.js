@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import useFriendStatus from './useFriendStatus';
-export default (props)=>{
+
+const Home=(props)=>{
     const isOnline = useFriendStatus(props.friend);
     const [count, setCount] = useState(0);
     const [sum, setSum] = useState({name: 11});
@@ -28,3 +29,4 @@ export default (props)=>{
         </div>
     )
 }
+export default Home;

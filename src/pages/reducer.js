@@ -1,10 +1,12 @@
-export default (state, action)=>{
+const counterReducer=(state, action)=>{
+    console.log(state);
     switch (action.type) {
         case "increment":
-            return {count:++state.count};
+            return {...state, count:++state.count};
         case "decrement":
-            return {count:--state.count}
+            return {...state, count:--state.count}
         default:
-            throw new Error('reducer');
+            return {...state};
     }
 }
+export default counterReducer;

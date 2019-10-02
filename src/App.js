@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, {createContext} from 'react';
 /**
  * useLayoutEffect
  * 其函数签名与 useEffect 相同，但它会在所有的 DOM 变更之后同步调用 effect。
@@ -17,11 +17,15 @@ import React from 'react';
 import './App.css';
 import Home from './pages/home';
 import Counter from './pages/Counter';
+export const ThemeContext=createContext();
 function App() {
     return (
         <div>
             <Home friend={true} />
-            <Counter />
+            <ThemeContext.Provider value="dark">
+                <Counter />
+            </ThemeContext.Provider>
+
         </div>
 
     );

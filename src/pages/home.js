@@ -5,14 +5,13 @@ const Home=(props)=>{
     const isOnline = useFriendStatus(props.friend);
     const [count, setCount] = useState(0);
     const [sum, setSum] = useState({name: 11});
-    const [width, setWindth]=useState(window.innerWidth);
+    const [setWindth]=useState(window.innerWidth);
     const resizeHandle=()=>{
-        setWindth(window.innerWidth);
-        console.log(window.innerWidth);
+        setWindth(window.innerWidth);//浏览器的宽度
     }
     useEffect(() => {
         document.title = `You clicked ${count} times`;
-        window.addEventListener('resize', resizeHandle);
+        window.addEventListener('resize', resizeHandle);//更新当前浏览器的宽度；
 
     }); //, [count]//第二参数可以传入props的值来更新界面；
     return (

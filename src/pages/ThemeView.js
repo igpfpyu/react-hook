@@ -5,7 +5,7 @@ export default ()=>{
     console.log(disp);
     return (
         <div>
-            <p>ThemeView</p>
+            <p>ThemeViews</p>
         </div>
     )
 }

@@ -17,6 +17,7 @@ import React, {createContext} from 'react';
 import './App.css';
 import Home from './pages/home';
 import Counter from './pages/Counter';
+
 export const ThemeContext=createContext();
 function App() {
     return (
@@ -25,7 +26,6 @@ function App() {
             <ThemeContext.Provider value="dark">
                 <Counter />
             </ThemeContext.Provider>
-
         </div>
 
     );

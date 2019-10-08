@@ -19,6 +19,7 @@ import Home from './pages/home';
 import Counter from './pages/Counter';
 
 export const ThemeContext=createContext();
+
 function App() {
     return (
         <div>

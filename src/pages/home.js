@@ -14,6 +14,7 @@ const Home=(props)=>{
         window.addEventListener('resize', resizeHandle);//更新当前浏览器的宽度；
 
     }); //, [count]//第二参数可以传入props的值来更新界面；
+
     return (
         <div>
             <p>{sum.name}</p>

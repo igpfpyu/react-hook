@@ -23,7 +23,7 @@ export const ThemeContext=createContext();
 function App() {
     return (
         <div>
-            <Home friend={true} />
+            <Home friend={false} />
             <ThemeContext.Provider value="dark">
                 <Counter />
             </ThemeContext.Provider>
